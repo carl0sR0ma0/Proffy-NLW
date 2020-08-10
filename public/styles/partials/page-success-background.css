@@ -1,0 +1,106 @@
+#page-success-background {
+  background-color: var(--color-primary);
+}
+
+#page-success-background #container {
+  color: var(--color-text-in-primary);
+  background: url('/images/success-background.svg');
+  
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.info-container {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.info-container img {
+  height: 5rem;
+}
+
+.info-container h2 {
+  color: var(--color-title-in-primary);
+  font-weight: 500;
+  font-size: 3.4rem;
+  line-height: 5.2rem;
+  margin-top: .8rem;
+}
+
+.info-container p {
+  font-size: 1.8rem;
+  margin: 1rem 6rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 3.2rem 0;
+}
+
+.button-container a {
+  margin-top: 2rem;
+  width: 17.6rem;
+  height: 4.1rem;
+  border-radius: .8rem;
+  
+  font: 700 1.8rem Archivo;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  transition: background 0.2s;
+
+  color: var(--color-button-text);
+}
+
+.button-container a.lista-study {
+  background: var(--color-secondary);
+  margin-right: 0;
+}
+
+.button-container a.lista-study:hover {
+  background: var(--color-secondary-dark);
+}
+
+@media (max-width: 699px){
+  :root {
+    font-size: 40%;
+  }
+}
+
+
+
+@media (min-width: 1100px){
+  #page-success-background #container {
+    max-width: 959.2px;
+  }
+
+  .info-container {
+    margin: 70px 180px;
+  }
+
+  .info-container p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    vertical-align: top;
+    margin: 35px;
+  }
+
+  .info-container img {
+    height: 120px;
+  }
+
+  .button-container a {
+    margin-top: 0;
+  }
+
+  .button-container a.lista-study {
+    background: var(--color-secondary);
+  }
+}

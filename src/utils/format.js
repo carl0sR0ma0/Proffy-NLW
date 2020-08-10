@@ -32,9 +32,18 @@ function converteHoursToMinutes(time) {
   return Number((hour * 60) + minutes)
 }
 
+function pageRedirect(queryString) {
+  window.onload = () => {
+    setInterval(() => {
+      location.href = "/study" + queryString
+    }, 2000);
+  }
+}
+
 module.exports = {
   subjects,
   weekdays,
   getSubject,
-  converteHoursToMinutes
+  converteHoursToMinutes,
+  pageRedirect
 }

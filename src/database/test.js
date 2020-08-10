@@ -35,7 +35,7 @@ Database.then(async (db) => {
 
   // Todos os proffys
   const selectedProffys = await db.all("SELECT * FROM proffys")
-  // console.log(selectedProffys)
+  console.log(selectedProffys)
 
   // Consultar as classes de um determinado professor
   // e trazer junto os dados do professor
