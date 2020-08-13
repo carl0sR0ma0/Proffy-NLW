@@ -44,6 +44,5 @@ module.exports = {
   subjects,
   weekdays,
   getSubject,
-  converteHoursToMinutes,
-  pageRedirect
+  converteHoursToMinutes
 }
